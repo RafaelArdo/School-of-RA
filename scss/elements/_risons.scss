@@ -1,0 +1,288 @@
+.all_risons {
+    display: flex;
+    height: auto;
+    background-image: linear-gradient( to right, $color-camel, $color-white);
+   
+
+    &_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 50px;
+
+    @include mobile {
+        flex-direction: column;
+    }
+ }
+}
+
+
+.risons_title {
+    text-align: center;
+    font-style: italic;
+    color: $color-black;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-top: 50px;
+
+}
+
+.rison_each {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rison_title {
+    width: 250px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-radius: 40px;
+    color: $color-black;
+
+    @include mobile {
+        color: $color-white;
+        font-size: 1.6rem;
+        
+    }
+}
+
+.risons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $color-black;
+   
+    @include mobile {
+        flex-direction: column;
+    }
+ 
+}
+
+.rison {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    text-align: center;
+    font-style: italic;
+}
+
+.rison_img {
+    display: flex;
+    width: 250px;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid $color-green;
+}
+
+.rison_img:hover {
+    transform: translate(10%, 0) scale(1.1) rotate(-1deg);
+    @include mobile {
+        transform: none;
+    
+    }
+   
+}
+
+.application {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 3rem;
+    letter-spacing: 0.05rem;
+    margin-top: 2rem;
+
+    @include mobile {
+        font-size: 1.3rem;
+    }
+    
+}
+
+.letter {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    border: 10px solid $color-green;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 5rem;
+}
+
+.info_person {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+
+    @include mobile {
+        padding: 2px;
+    }
+}
+
+.info_field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.info_label {
+    margin-bottom: 5px;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.9rem;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+
+    @include mobile {
+        font-size: 0.6rem;
+    }
+}
+
+.info_input {
+    border: none;
+    border-bottom: 1px solid $color-green;
+    background-color: transparent;
+    line-height: 1.5rem;
+}
+
+.info_person textarea {
+    border: none;
+    border: 1px solid $color-green;
+    background-color: transparent;
+    line-height: 1rem;
+    border-radius: 5px;
+}
+
+.consent_text {
+    margin: 0 10px;
+    font-size: 0.8rem;
+    line-height: 18px;
+
+    @include mobile {
+        font-size: 0.4rem;
+        line-height: 10px;
+    }
+  }
+
+  .info_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.info_checkbox {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox {
+    height: 20px;
+    width: 20px;
+    //flex-shrink: 0;
+    //flex-basis: 20px;
+    cursor: pointer;
+    border: 1px solid $color-green;
+    border-radius: 4px;
+
+    @include mobile {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.info_checkbox input:checked + span {
+    background-color: black;
+       /*background-image: url(../../image/Checkmark.svg);
+       background-position: center;
+       background-size: 100%;
+       background-repeat: no-repeat;*/
+    }
+
+
+.envelop {
+    width: 13rem;
+    height: 9rem;
+    background-color: $color-camel;
+    border-radius: 20px;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    @include mobile {
+        width: 9rem;
+        height: 7rem;
+        margin-left: 5rem;
+        
+    }
+    
+}
+
+.arrow {
+    width: 200px;
+    height: 100px;
+    background-color: beige;
+    clip-path: polygon(50% 30%, 100% 0, 100% 20%, 50% 50%, 0 20%, 0 0);
+    border-radius: 4px;
+    margin-top: 1.3rem;
+
+    @include mobile {
+        width: 8rem;
+        height: 6rem;
+        
+    }
+}
+
+.envelop button {
+    position: relative;
+    color: black;
+    background-color: beige;
+    padding: 5px 25px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    z-index: 0;   
+
+    @include mobile {
+        font-size: 0.5rem;
+        padding: 5px 15px;
+    }
+}
+
+
+
+
+.envelop .btn:hover {
+    background-color:$color-camel;
+    color: beige;
+    border: 2px solid black;
+    font-style: italic;
+}
+
+
+.envelop .btn:active  {
+    background-color: black;
+    color: beige;
+    
+}
+
+
+
+
